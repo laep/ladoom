@@ -83,5 +83,6 @@
   :config (lsp-register-client (make-lsp-client :new-connection (lsp-stdio-connection '("terraform-ls" "serve"))
                     :major-modes '(terraform-mode)
                     :server-id 'terraform-ls))
+  (setq lsp-disabled-clients '(tfmls))
   :hook (terraform-mode . lsp-deferred)
 )
