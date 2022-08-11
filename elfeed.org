@@ -1,0 +1,16 @@
+* Blogs :elfeed:
+** entry-title: \(release\|released\) :release:
+** Grafana :grafana:
+*** https://grafana.com/tags/security :security:
+*** https://grafana.com/categories/news :news:
+*** https://grafana.com/categories/release :release:
+** Elastic :elastic:
+*** https://www.elastic.co/blog/feed
+** Gitlab :gitlab:
+*** https://about.gitlab.com/atom.xml
+** Github :github:
+*** https://github.blog/feed/
+** Terraform :terraform:
+*** https://www.hashicorp.com/blog/products/terraform/feed.xml
+** CNCF :cncf:
+*** https://www.cncf.io/feed/

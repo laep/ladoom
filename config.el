@@ -6,8 +6,8 @@
 
 ;; Some functionality uses this to identify you, e.g. GPG configuration, email
 ;; clients, file templates and snippets. It is optional.
-(setq user-full-name "John Doe"
-      user-mail-address "john@doe.com")
+(setq user-full-name "Andre Rosendo"
+      user-mail-address "andrerosendo@hotmail.com")
 
 ;; Doom exposes five (optional) variables for controlling fonts in Doom:
 ;;
@@ -38,9 +38,17 @@
 ;; numbers are disabled. For relative line numbers, set this to `relative'.
 (setq display-line-numbers-type t)
 
+;; Always start emacsclient maximized
+(add-to-list 'default-frame-alist '(fullscreen . maximized))
+
 ;; If you use `org' and don't want your org files in the default location below,
 ;; change `org-directory'. It must be set before org loads!
 (setq org-directory "~/org/")
+
+;; tell org mode to add a note and time stamp when you closed a task
+(setq org-log-done 'note)
+;; files to be considered as agenda files
+(setq org-agenda-files '("~/org/Notas.org" "~/org/notes.org" "~/org/tasks.org"))
 
 
 ;; Whenever you reconfigure a package, make sure to wrap your config in an
@@ -86,3 +94,7 @@
   (setq lsp-disabled-clients '(tfmls))
   :hook (terraform-mode . lsp-deferred)
 )
+
+;; PLANTUML-MODE configurations
+;; execute plantuml from jar and not from the website
+(setq plantuml-default-exec-mode 'jar)
